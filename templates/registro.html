@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TIPOGRAFIA GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/img/sedan.png" type="image/x-icon">
+
+    <title>Concesionaria de Autos</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+    <header>
+        <!-- BARRA DE NAVEGACION -->
+        <nav class="navbar">
+            <div class="hamburger" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <img src="../assets/img/sedan.png" alt="Logo" class="logo">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="catalogo.html">Catalogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="crud.html">CRUD</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <main class="registro">
+
+        <!-- FORMULARIO DE REGISTRO -->
+        <form class="form-reg" id="registerForm">
+            <h2>Crea tu cuenta</h2>
+
+                <label for="nombre">Nombre/s: </label>
+                <input type="text" name="nombre" id="nombre" placeholder="ej. Juan" required>
+
+                <label for="apellido">Apellido/s: </label>
+                <input type="text" name="apellido" id="apellido" placeholder="ej. Perez" required>
+
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="nombre@mail.com" required>
+
+                <label for="password">Contraseña: </label>
+                <input type="password" name="password" id="contraseña" required>
+
+            <button type="submit">Registrarse</button>
+        </form>
+        
+    </main>
+    <footer>
+        <!-- TALVEZ SE DEBERIA AGREGAR MAS INFO O MARKETING -->
+        <section class="infoMarketing">
+            <div class="redes">
+                <a href="https://www.facebook.com/concesionaria"><img src="https://cdn-icons-png.flaticon.com/256/124/124010.png" alt="Facebook"></a>
+                <a href="https://www.twitter.com/concesionaria"><img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/concecionaria"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram"></a>
+            </div>
+            <h3 class="espaciado3">SOMOS TOP UNO EN VENTAS</h3>
+            <img src="https://png.pngtree.com/png-clipart/20221008/original/pngtree-number-1-best-seller-award-badge-png-image_8666630.png"
+            width="300px"
+            alt="topOne">
+                <h3 class="espaciado3">SOMOS TOP UNO EN VENTAS</h3>
+            <h3>
+                La concesionaria que redefine la excelencia. “Autos Prestigio” no es solo un destino, es la cumbre del lujo automotriz. Con una selección inigualable de vehículos de alta gama y un servicio al cliente que supera todas las expectativas, nos hemos ganado el título de la mejor concesionaria del mundo. Nuestro compromiso con la calidad y la satisfacción del cliente es inquebrantable, y cada auto que vendemos es una promesa de rendimiento, elegancia y confiabilidad. Descubre la perfección en cada detalle, desde la primera bienvenida hasta el servicio posventa. En “Autos Prestigio”, no solo compras un auto; adquieres una pieza de la excelencia automotriz.
+            </h3>
+        </section>
+    </footer>
+    <script src="../funcionesJS/registro.js" defer></script>
+</body>
+</html>
